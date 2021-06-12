@@ -8,8 +8,12 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    <bean id="myFortuneService"
+          class="HappyFortuneService">
+    </bean>
     <bean id="myCoach"
           class="BaseBallCoach">
+        <constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
 
 

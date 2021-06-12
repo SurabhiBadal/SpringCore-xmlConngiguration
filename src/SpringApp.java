@@ -10,6 +10,9 @@ public class SpringApp {
         // call methods on the bean
         System.out.println(theCoach.getDailyRoutine());
 
+        // Call the new method
+        System.out.println(theCoach.getDailyFortune());
+
         //close the context
         context.close();
 
