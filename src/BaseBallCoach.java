@@ -12,4 +12,11 @@ public class BaseBallCoach implements Coach {
     public String getDailyFortune() {
         return fortuneService.getFortune();
     }
+
+    public void doStartupStuff(){
+        System.out.println("BaseBallCoach : Inside doStartupStuff");
+    }
+    public void doCleanupStuff(){
+        System.out.println("BaseBallCoach : Inside doCleanupStuff");
+    }
 }
