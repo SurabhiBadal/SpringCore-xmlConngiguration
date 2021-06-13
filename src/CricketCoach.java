@@ -1,14 +1,14 @@
-public class HockeyCoach implements Coach {
+public class CricketCoach implements Coach{
+
     private FortuneService fortuneService;
-    public HockeyCoach(FortuneService fortuneService) {
+
+    public void setFortuneService(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
-
     @Override
     public String getDailyRoutine() {
-        return "Practise Hockey for 2 hrs";
+        return "Practice Cricket for 120 minutes";
     }
-
     @Override
     public String getDailyFortune() {
         return fortuneService.getFortune();

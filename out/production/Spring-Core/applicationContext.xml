@@ -15,6 +15,10 @@
           class="BaseBallCoach">
         <constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
+    <bean id="myCricketCoach"
+          class="CricketCoach">
+        <property name="fortuneService" ref="myFortuneService"></property>
+    </bean>
 
 
 </beans>
